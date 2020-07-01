@@ -243,4 +243,9 @@ body {
         margin-bottom: 30px;
     }
 
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
 }
