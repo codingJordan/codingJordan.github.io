@@ -18,7 +18,7 @@ li {
 }
 
 .bg-custom {
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .nav-link {
@@ -28,15 +28,17 @@ li {
 
 .nav-link:hover {
     text-shadow: 0px 0px 18px white;
-    color: rgb(30,215,96) !important;
+    color: #43A6C6 !important;
+    transition: 0.2s;
 }
 
 .nav-link:hover::after {
     width: 100%;
-    transition: 0.1s ease-in;
+    transition: 0.2s ease-in;
     opacity: 100;
-    background-color: rgb(30,215,96);
-    text-shadow: 0px 0px 18px rgb(30,215,96);
+    background-color: #43A6C6;
+    text-shadow: 0px 0px 18px #43A6C6;
+    margin-left: 0px;
 }
 
 .nav-link::after {
@@ -45,7 +47,8 @@ li {
     height: 1px;
     background-color: white;
     transition: 0.2s ease-in-out;
-    opacity: 0;
+    width: 0;
+    margin-left: auto;
 }
 
 .navbar-nav {
@@ -54,7 +57,7 @@ li {
 
 .navbar-brand {
     margin-left: 300px;
-    color: rgb(30,215,96) !important;
+    color: #43A6C6 !important;
     font-size: 14pt;
     transition: 0.2s;
 }
@@ -73,7 +76,7 @@ li {
 }
 
 .navbar-toggler-icon {
-    background-image: url(https://i.ibb.co/tp6B6ZL/burger.png) !important;
+    background-image: url(https://i.ibb.co/HTcM0xY/burger.png) !important;
 }
 /*BODY STYLES*/
 
@@ -82,7 +85,7 @@ header {
 }
 
 body {
-    background-image: url(https://i.ibb.co/55S7NrY/background.jpg);
+    background-image: url(https://i.ibb.co/0qRPVz1/image-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,7 +117,7 @@ body {
 .btn-started {
     color: #000000;
     font-weight: bold;
-    background-color: rgb(30,215,96);
+    background-color: #43A6C6;
     padding: 12px 60px;
     border: transparent;
     transition: 0.5s all;
@@ -122,9 +125,9 @@ body {
 }
 
 .btn-started:hover {
-    box-shadow: 0px 0px 0px 4px rgb(30,215,96);
-    background-color: rgb(30, 150, 96);
+    background-color: #43A6C683;
     transition: 0.2s all;
+    transform: translateY(1.5px);
 }
 
 .btn-started:focus {
@@ -147,12 +150,14 @@ body {
     padding: 6px 48px;
     background-color: transparent;
     border: 2px solid white;
-    color: rgb(30,215,96);
+    color: #43A6C6;
     transition: 0.5s all;
 }
 
 .container-project button:hover {
-    border-color: rgb(30,215,96);
+    border-color: #43A6C6;
+    background-color: #43A6C6;
+    color: black;
     transition: 0.3s all;
     cursor: pointer;
 }
@@ -163,13 +168,13 @@ body {
 
 .container-project {
     transition: 0.2s;
-    box-shadow: 0px 0px 5px rgb(30,215,96);
+    box-shadow: 0px 0px 5px #43A6C6;
 }
 
 .container-project:hover{
     transform: scale(1.05);
     transition: 0.2s;
-    box-shadow: 0px 0px 20px rgb(30,215,96);
+    box-shadow: 0px 0px 20px #43A6C6;
 }
 .container-project {
     width: 300px;
@@ -207,17 +212,17 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(30,215,96); 
+    background: #43A6C6; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(30, 150, 96); 
+    background: #43a5c683; 
   }
 /*FOOTER STYLES*/
 .foot-container {
@@ -248,7 +253,7 @@ body {
     transition: 0.2s;
     margin-right: 15px;
     margin-left: 15px;
-    border: 1px solid rgb(30,215,96);
+    border: 1px solid #43A6C6;
     width: 80px;
     height: 80px;
     padding: 20px 20px;
