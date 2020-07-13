@@ -193,7 +193,7 @@ li {
     padding-bottom: 30px;
 }
 
-.fa-twitter, .fa-paypal, .fa-envelope{
+.fa-twitter, .fa-paypal, .fa-envelope, .fa-discord{
     color: white;
     transition: 0.2s;
     margin-right: 15px;
@@ -218,6 +218,11 @@ li {
 .fa-paypal:hover {
     transition: 0.2s;
     background-color: rgb(0 69 124);
+}
+
+.fa-discord:hover {
+    transition: 0.2s;
+    background-color: #7289DA;
 }
 
 
