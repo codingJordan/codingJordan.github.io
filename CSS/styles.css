@@ -248,7 +248,7 @@ body {
     padding-bottom: 30px;
 }
 
-.fa-twitter, .fa-paypal, .fa-envelope, .fa-discord{
+.fa-twitter, .fa-fire, .fa-paypal, .fa-envelope, .fa-discord{
     color: white;
     transition: 0.2s;
     margin-right: 15px;
@@ -263,21 +263,31 @@ body {
 .fa-twitter:hover {
     transition: 0.2s;
     background-color: rgb(29,161,242);
+    border-color: rgb(29,161,242);
+}
+
+.fa-fire:hover {
+    transition: 0.2s;
+    background-color: #e25822;
+    border-color: #e25822;
 }
 
 .fa-envelope:hover {
     transition: 0.2s;
     background-color: rgb(212, 70, 56);
+    border-color: rgb(212, 70, 56);
 }
 
 .fa-paypal:hover {
     transition: 0.2s;
     background-color: rgb(0 69 124);
+    border-color: rgb(0 69 124);
 }
 
 .fa-discord:hover {
     transition: 0.2s;
     background-color: #7289DA;
+    border-color: #7289DA;
 }
 
 
