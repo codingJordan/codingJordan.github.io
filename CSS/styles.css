@@ -9,75 +9,125 @@
 */
 
 /*NAVBAR STYLES*/
-a {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Recursive', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #43A6C6 ;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-family: 'Recursive', sans-serif;
+}
+
+.nav-links a {
     text-decoration: none;
+    letter-spacing: 3px;
+    color: snow;
+    transition: 0.2s;
+    text-transform: uppercase;
 }
 
-li {
-    list-style-type: none;
-}
-
-.bg-custom {
-    background-color: transparent;
-}
-
-.nav-link {
-    color: white !important;
-    margin: 0px 5px;
-}
-
-.nav-link:hover {
-    text-shadow: 0px 0px 18px white;
-    color: #43A6C6 !important;
+.nav-links a:hover {
+    color: black;
     transition: 0.2s;
 }
 
-.nav-link:hover::after {
-    width: 100%;
-    transition: 0.2s ease-in;
-    opacity: 100;
-    background-color: #43A6C6;
-    text-shadow: 0px 0px 18px #43A6C6;
-    margin-left: 0px;
+.nav-links li {
+    list-style: none;
 }
 
-.nav-link::after {
-    content: '';
-    display: block;
-    height: 1px;
-    background-color: white;
-    transition: 0.2s ease-in-out;
-    width: 0;
-    margin-left: auto;
+.burger {
+    display: none;
 }
 
-.navbar-nav {
-    margin-right: 300px;
+.burger div {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background-color: snow;
+    transition: all 0.3s ease;
 }
 
-.navbar-brand {
-    margin-left: 300px;
-    color: #43A6C6 !important;
-    font-size: 14pt;
-    transition: 0.2s;
+.burger:hover {
+    cursor: pointer;
 }
 
-.navbar-brand:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
+@media screen and (max-width:812px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 42vh;
+        top: 8vh;
+        background-color: #43A6C6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
 }
 
-.navbar-toggler {
-    border-color: transparent !important;
+.nav-active {
+    transform: translateX(0%);
 }
 
-.navbar-toggler:focus {
-    outline: none;
+@keyframes navLinkFade {
+
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
 }
 
-.navbar-toggler-icon {
-    background-image: url(https://i.ibb.co/HTcM0xY/burger.png) !important;
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px,6px);
 }
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px,-6px);
+}
+    
 /*BODY STYLES*/
 
 header {
@@ -103,7 +153,7 @@ body {
 
 .header-text h1 {
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: #43A6C6;
     font-size: 40pt;
     margin-bottom: 20px;
 }
@@ -200,6 +250,7 @@ body {
 
 .row {
     justify-content: center;
+    display: inline-flex;
 }
 
 .container-project {
@@ -248,7 +299,7 @@ body {
     padding-bottom: 30px;
 }
 
-.fa-twitter, .fa-fire, .fa-paypal, .fa-envelope, .fa-discord{
+.fa-twitter, .fa-youtube, .fa-paypal, .fa-envelope, .fa-discord{
     color: white;
     transition: 0.2s;
     margin-right: 15px;
@@ -266,10 +317,10 @@ body {
     border-color: rgb(29,161,242);
 }
 
-.fa-fire:hover {
+.fa-youtube:hover {
     transition: 0.2s;
-    background-color: #e25822;
-    border-color: #e25822;
+    background-color: #c4302b;
+    border-color: #c4302b;
 }
 
 .fa-envelope:hover {
@@ -336,6 +387,10 @@ body {
     body {
         background: url(https://i.ibb.co/19ByJx1/image-3.jpg);
         background-size: cover;
+    }
+
+    .row {
+        display: inline-block;
     }
 
 }
