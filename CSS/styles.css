@@ -9,6 +9,10 @@
 */
 
 /*NAVBAR STYLES*/
+html, body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +37,6 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
     font-family: 'Recursive', sans-serif;
 }
 
@@ -43,15 +46,19 @@ nav {
     color: snow;
     transition: 0.2s;
     text-transform: uppercase;
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 .nav-links a:hover {
-    color: black;
     transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-links li {
     list-style: none;
+    margin: 0px 15px;
 }
 
 .burger {
@@ -343,6 +350,10 @@ body {
 
 
 @media (max-width: 812px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar-brand {
         margin-left: 30px;
     }
@@ -394,4 +405,3 @@ body {
     }
 
 }
-
