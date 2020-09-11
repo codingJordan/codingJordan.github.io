@@ -38,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-around;
     font-family: 'Recursive', sans-serif;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .nav-links a {
@@ -46,7 +46,7 @@ nav {
     letter-spacing: 3px;
     color: snow;
     text-transform: uppercase;
-    padding: 30px 10px;
+    padding: 20px 30px;
     background-color: transparent;
     transition: 0.2s;
 }
@@ -58,7 +58,6 @@ nav {
 
 .nav-links li {
     list-style: none;
-    margin: 0px 15px;
 }
 
 .burger {
@@ -204,7 +203,6 @@ body {
 }
 
 .container-project img {
-    border-radius: 10px;
 }
 
 .container-project h1  {
@@ -212,6 +210,11 @@ body {
     font-size: 20pt;
     text-align: center;
     margin: 10px 0 0 5px;
+    cursor: default;
+}
+
+.container-project h1:hover {
+    cursor: default;
 }
 
 .container-project button {
@@ -219,14 +222,13 @@ body {
     padding: 6px 48px;
     background-color: transparent;
     border: 2px solid white;
-    color: #00a0dc;
+    color: white;
     transition: 0.5s all;
 }
 
 .container-project button:hover {
-    border-color: #00a0dc;
-    background-color: #00a0dc;
-    color: black;
+    background-color: white;
+    color: #00a0dc;
     transition: 0.3s all;
     cursor: pointer;
 }
@@ -235,12 +237,19 @@ body {
     outline: none;
 }
 
-.container-project {
-    transition: 0.2s;
-    box-shadow: 0px 0px 5px #00a0dc;
+.projects:hover .container-project{
+    opacity: 0.5;
 }
 
-.container-project:hover{
+.projects .container-project:hover {
+    opacity: 1;
+}
+
+.container-project {
+    transition: 0.2s;
+}
+
+.container-project:hover {
     transform: scale(1.05);
     transition: 0.2s;
     box-shadow: 0px 0px 20px #00a0dc;
@@ -248,18 +257,8 @@ body {
 .container-project {
     width: 300px;
     height: 300px;
-    background-color: #000000;
+    background-color: #00a0dc;
     border-radius: 10px;
-}
-
-.blocks {
-    padding: 0;
-    margin: 0;
-}
-
-.blocks:hover {
-    opacity: 0.4;
-    display: inline-block;
 }
 
 .myproj {
@@ -299,7 +298,7 @@ body {
 /*FOOTER STYLES*/
 .foot-container {
     margin-top: 100px;
-    background-color: #000000;
+    background-color:#00a0dc;
     width: 100%;
     color: white;
 }
@@ -319,50 +318,34 @@ body {
     padding-bottom: 30px;
 }
 
-.fa-twitter, .fa-youtube, .fa-paypal, .fa-envelope, .fa-discord{
+.fa-twitter, .fa-youtube, .fa-paypal, .fa-envelope {
     padding: 12px 48px;   
     background-color: transparent;
     border-radius: 500px;
-    color: #00a0dc;
+    color:white;
     transition: 0.2s;
     font-size: 30pt;
 }
 
 .fa-twitter:hover {
     transition: 0.2s;
-    background-color: rgb(29,161,242);
-    border-color: rgb(29,161,242);
-    color: white;
+    color: rgb(29,161,242);
 }
 
 .fa-youtube:hover {
     transition: 0.2s;
-    background-color: #c4302b;
-    border-color: #c4302b;
-    color: white;
+    color:  #c4302b;
 }
 
 .fa-envelope:hover {
     transition: 0.2s;
-    background-color: rgb(212, 70, 56);
-    border-color: rgb(212, 70, 56);
-    color: white;
+    color: rgb(212, 70, 56);
 }
 
 .fa-paypal:hover {
     transition: 0.2s;
-    background-color: rgb(0 69 124);
-    border-color: rgb(0 69 124);
-    color: white;
+    color: rgb(0 69 124);
 }
-
-.fa-discord:hover {
-    transition: 0.2s;
-    background-color: #7289DA;
-    border-color: #7289DA;
-    color: white;
-}
-
 
 @media (max-width: 812px) {
     body {
