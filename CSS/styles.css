@@ -20,10 +20,16 @@ html, body {
 }
 
 .logo {
-    color: white;
+    color: #6441a5;
     text-transform: uppercase;
     font-family: 'Recursive', sans-serif;
     letter-spacing: 2px;
+    cursor: default;
+}
+
+.logo:hover {
+    color: #b9a3e3;
+    text-shadow: 0px 0px 18px #b9a3e3;
 }
 
 nav {
@@ -31,7 +37,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: transparent ;
-    background-color: #00a0dc;
+    background-color: transparent;
 }
 
 .nav-links {
@@ -44,16 +50,17 @@ nav {
 .nav-links a {
     text-decoration: none;
     letter-spacing: 3px;
-    color: snow;
+    color: rgba(255, 250, 250, 0.3);
     text-transform: uppercase;
     padding: 20px 30px;
     background-color: transparent;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    background-color:#007daa;
-    transition: 0.2s;
+    color:#b9a3e3;
+    text-shadow: 0px 0px 18px #b9a3e3;
+    transition: 0.3s;
 }
 
 .nav-links li {
@@ -86,7 +93,7 @@ nav {
         right: 0px;
         height: 42vh;
         top: 8vh;
-        background-color: #00a0dc;
+        background-color: #262626;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -102,7 +109,6 @@ nav {
     }
 
     .nav-links a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
         padding: 10px 10px;
     }
 
@@ -153,9 +159,10 @@ header {
 }
 
 body {
-    background-image: url(https://i.ibb.co/0qRPVz1/image-2.jpg);
+    background-image: url(https://i.ibb.co/R7NMXz4/5462979.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -171,9 +178,10 @@ body {
 
 .header-text h1 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #00a0dc;
+    color: #6441a5;
     font-size: 40pt;
     margin-bottom: 20px;
+    text-shadow: black 0px 0px 18px;
 }
 
 .header-text sub {
@@ -186,17 +194,17 @@ body {
     color: white;
     font-weight: bold;
     background-color: transparent;
-    padding: 18px 48px;
-    border: 3px solid #00a0dc;
+    padding: 12px 48px;
+    border: 3px solid #6441a5;
     transition: 0.2s all;
     cursor: pointer;
-    font-size: 12pt;
-    background-color: #00a0dc
+    font-size: 10pt;
+    background-color: transparent;
 }
 
 .btn-started:hover {
-    color: #00a0dc;
-    background-color: transparent;
+    background-color: #6441a5;
+    border-color: #6441a5;
     transition: 0.2s all;
 }
 
@@ -205,7 +213,7 @@ body {
 }
 
 .container-project h1  {
-    color: white;
+    color: #b9a3e3;
     font-size: 20pt;
     text-align: center;
     margin: 10px 0 0 5px;
@@ -226,22 +234,15 @@ body {
 }
 
 .container-project button:hover {
-    background-color: white;
-    color: #00a0dc;
+    background-color: #6441a5;
+    color: white;
     transition: 0.3s all;
     cursor: pointer;
+    border-color: #6441a5;
 }
 
 .container-project button:focus {
     outline: none;
-}
-
-.projects:hover .container-project{
-    opacity: 0.5;
-}
-
-.projects .container-project:hover {
-    opacity: 1;
 }
 
 .container-project {
@@ -251,12 +252,12 @@ body {
 .container-project:hover {
     transform: scale(1.05);
     transition: .2s;
-    box-shadow: 0px 0px 20px #00a0dc;
+    box-shadow: 0px 0px 20px #6441a5;
 }
 .container-project {
     width: 300px;
     height: 300px;
-    background-color: #00a0dc;
+    background-color: #262626;
     border-radius: 10px;
 }
 
@@ -306,22 +307,22 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background:#262626;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #00a0dc; 
+    background: #6441a5; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #43a5c683; 
+    background: #b9a3e3; 
   }
 /*FOOTER STYLES*/
 .foot-container {
-    margin-top: 100px;
-    background-color:#00a0dc;
+    position: absolute;
+    background-color: black;
     width: 100%;
     color: white;
 }
@@ -331,48 +332,57 @@ body {
     margin: 20px;
 }
 
+.foot-info h1 {
+    color: #6441a5;
+}
+
 .foot-info sub {
     margin-top: 10px;
     font-size: 15pt;
 }
 
 .socialmedia {
-    margin-top: 30px;
-    padding-bottom: 30px;
+    margin: 30px auto;
+    text-align: center;
 }
 
 .fa-twitter, .fa-youtube, .fa-paypal, .fa-envelope {
-    padding: 12px 48px;   
-    background-color: transparent;
-    border-radius: 500px;
-    color:white;
-    transition: 0.2s;
+    padding: 15px;
     font-size: 30pt;
+    transition: 0.2s;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .fa-twitter:hover {
     transition: 0.2s;
-    color: rgb(29,161,242);
+    color:#b9a3e3;
+    text-shadow: 0px 0px 10px #b9a3e3;
 }
 
 .fa-youtube:hover {
     transition: 0.2s;
-    color:  #c4302b;
+    color:#b9a3e3;
+    text-shadow: 0px 0px 10px #b9a3e3;
 }
 
 .fa-envelope:hover {
     transition: 0.2s;
-    color: rgb(212, 70, 56);
+    color:#b9a3e3;
+    text-shadow: 0px 0px 10px #b9a3e3;
 }
 
 .fa-paypal:hover {
     transition: 0.2s;
-    color: rgb(0 69 124);
+    color:#b9a3e3;
+    text-shadow: 0px 0px 10px #b9a3e3;
 }
 
 @media (max-width: 812px) {
     body {
-        overflow-x: hidden;
+        background: black;
     }
 
     .navbar-brand {
@@ -414,11 +424,6 @@ body {
         width: 70px;
         height: 70px;
         margin-bottom: 30px;
-    }
-
-    body {
-        background: url(https://i.ibb.co/19ByJx1/image-3.jpg);
-        background-size: cover;
     }
 
     .row {
