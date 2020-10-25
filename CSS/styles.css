@@ -6,7 +6,7 @@
 }
 
 .logo {
-    color: #E97350;
+    color:#ff6500;
     text-transform: uppercase;
     font-family: 'Recursive', sans-serif;
     letter-spacing: 2px;
@@ -14,8 +14,8 @@
 }
 
 .logo:hover {
-    color: #f78866;
-    text-shadow: 0px 0px 18px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 18px#ff6500;
 }
 
 nav {
@@ -43,8 +43,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color:#f78866;
-    text-shadow: 0px 0px 18px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 18px #ff6500;
     transition: 0.3s;
 }
 
@@ -163,7 +163,7 @@ body {
 
 .header-text h1 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #E97350;
+    color:#ff6500;
     font-size: 40pt;
     margin-bottom: 20px;
     text-shadow: black 0px 0px 18px;
@@ -180,19 +180,19 @@ body {
     font-weight: bold;
     background-color: transparent;
     padding: 12px 60px;
-    border: 3px solid #E97350;
+    border: 3px solid#ff6500;
     transition: 0.2s all;
     cursor: pointer;
     font-size: 15pt;
-    background-color: #E97350;
+    background-color:#ff6500;
     border-radius: 50px;
     letter-spacing: 2px;
     font-family: 'Ubuntu Mono', monospace;
 }
 
 .btn-started:hover {
-    background-color: #8d3d25;
-    border-color: #8d3d25;
+    background-color: #9c3f00;
+    border-color: #9c3f00;
     transition: 0.2s all;
 }
 
@@ -201,7 +201,7 @@ body {
 }
 
 .container-project h1  {
-    color: #f78866;
+    color:#ff6500;
     font-size: 20pt;
     text-align: center;
     margin: 10px 0 0 5px;
@@ -222,10 +222,10 @@ body {
 }
 
 .container-project button:hover {
-    background-color: #E97350;
+    background-color:#ff6500;
     color: white;
     cursor: pointer;
-    border-color: #E97350;
+    border-color:#ff6500;
 }
 
 .container-project button:focus {
@@ -239,7 +239,7 @@ body {
 .container-project:hover {
     transform: scale(1.05);
     transition: .2s;
-    box-shadow: 0px 0px 20px #E97350;
+    box-shadow: 0px 0px 20px#ff6500;
 }
 .container-project {
     width: 300px;
@@ -294,22 +294,22 @@ body {
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background:#262626;
+    background:black;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #E97350; 
+    background:#ff6500; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #f78866; 
+    background:#9c3f00; 
   }
 /*FOOTER STYLES*/
 .foot-container {
@@ -325,7 +325,7 @@ body {
 }
 
 .foot-info h1 {
-    color: #E97350;
+    color:#ff6500;
 }
 
 .foot-info sub {
@@ -350,26 +350,26 @@ body {
 
 .fa-twitter:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px#ff6500;
 }
 
 .fa-github:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px#ff6500;
 }
 
 .fa-envelope:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px#ff6500;
 }
 
 .fa-paypal:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px#ff6500;
 }
 
 @media (max-width: 812px) {

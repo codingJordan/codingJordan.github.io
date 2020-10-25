@@ -27,8 +27,8 @@ body {
 }
 
 .logo:hover {
-    color: #f78866;
-    text-shadow: 0px 0px 18px #f78866;
+    color: #ff6500;
+    text-shadow: 0px 0px 18px #ff6500;
 }
 
 nav {
@@ -56,8 +56,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color:#f78866;
-    text-shadow: 0px 0px 18px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 18px #ff6500;
     transition: 0.3s;
 }
 
@@ -159,7 +159,7 @@ nav {
 
 .title-class {
     text-align: center;
-    color: #E97350;
+    color: #ff6500;
     font-family: 'Bangers', cursive;
     letter-spacing: 4px;
     font-size: 30pt;
@@ -179,7 +179,7 @@ nav {
 }
 
 .single-text h1 {
-    color: #E97350;
+    color: #ff6500;
     margin: 0px 0px 15px 0px;
     text-align: center;
     font-family: 'Bangers', cursive;
@@ -195,12 +195,12 @@ nav {
 
 .single-text a {
     color:white;
-    text-decoration-color: #E97350;
+    text-decoration-color: #ff6500;
     transition: 0.2s;
 }
 
 .single-text a:hover {
-    background-color: #e9745075;
+    background-color: #ff6600a4;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -210,6 +210,26 @@ nav {
     display: flex;
     justify-content: center;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#ff6500; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#9c3f00; 
+  }
 
 /*
 
@@ -228,7 +248,7 @@ nav {
 }
 
 .foot-info h1 {
-    color: #E97350;
+    color:#ff6500;
     margin: 30px 0px 10px 0px;
 }
 
@@ -253,26 +273,26 @@ nav {
 
 .fa-twitter:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px #ff6500;
 }
 
 .fa-github:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px #ff6500;
 }
 
 .fa-envelope:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px #ff6500;
 }
 
 .fa-paypal:hover {
     transition: 0.2s;
-    color:#f78866;
-    text-shadow: 0px 0px 10px #f78866;
+    color:#ff6500;
+    text-shadow: 0px 0px 10px #ff6500;
 }
 
 @media (max-width: 812px) {
