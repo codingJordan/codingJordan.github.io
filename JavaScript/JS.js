@@ -1,4 +1,15 @@
-//v3.5
+/*
+
+Website Version v4.0
+
+Made by @J0AXY on Twitter!
+
+https://joaxy.github.io
+https://github.com/Joaxy
+https://twitter.com/J0AXY
+https://instagram.com/J0AXY
+
+*/
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
