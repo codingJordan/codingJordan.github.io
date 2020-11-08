@@ -74,21 +74,22 @@ nav {
 	.nav-links {
 		position: absolute;
 		right: 0px;
-		height: 42vh;
 		top: 8vh;
 		background-color: #262626;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		align-items: center;
 		width: 50%;
 		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-		text-decoration: none;
 		letter-spacing: 3px;
-		transition: 0.2s;
 		text-transform: uppercase;
-		padding: 10px 10px;
+		padding: 10px 5px;
 		border-radius: 10px;
+		text-align: center;
+	}
+
+	.nav-active {
+		display: block;
 	}
 
 	.nav-links a:hover {
@@ -150,7 +151,6 @@ body {
 .container {
 	background-color: transparent;
 	margin: 50px auto;
-	width: 80%;
 	text-align: center;
 }
 
