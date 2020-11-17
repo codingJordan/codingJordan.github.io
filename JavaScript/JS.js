@@ -1,13 +1,13 @@
 /*
 
-Website Version v4.0
+Website Version v4.2
 
-Made by @J0AXY on Twitter!
+Made by @jordanCoding on Twitter!
 
-https://joaxy.github.io
-https://github.com/Joaxy
-https://twitter.com/J0AXY
-https://instagram.com/J0AXY
+https://codingJordan.github.io
+https://github.com/codingJordan
+https://twitter.com/jordanCoding
+https://www.youtube.com/channel/UCpBrGERV1KaIGjsQPz8z2Wg
 
 */
 
