@@ -1,6 +1,6 @@
 /*
 
-Website Version v4.2
+Website Version v4.5
 
 Made by @jordanCoding on Twitter!
 
@@ -16,6 +16,10 @@ https://www.youtube.com/channel/UCpBrGERV1KaIGjsQPz8z2Wg
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+	background-color: black;
 }
 /*NAVBAR STYLES*/
 nav {
@@ -142,7 +146,7 @@ header {
 }
 
 body {
-	background-image: url(https://i.ibb.co/R7NMXz4/5462979.jpg);
+	background: url(https://i.ibb.co/R7NMXz4/5462979.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
@@ -200,6 +204,10 @@ body {
 .btn-started:focus {
 	outline: none;
 }
+/*Project Styles*/
+.projects {
+	margin: 10px 0px 100px 0px;
+}
 
 .container-project h1 {
 	background: -webkit-linear-gradient(#5680e9, #8860d0);
@@ -231,7 +239,6 @@ body {
 	border-color: black;
 	color: white;
 	cursor: pointer;
-	transform: translateY(2px);
 }
 
 .container-project button:focus {
@@ -327,6 +334,9 @@ p {
 	border-radius: 10px;
 	cursor: default;
 }
+/*Project Styles*/
+
+/*ScrollBar Styles*/
 /* width */
 ::-webkit-scrollbar {
 	width: 7px;
@@ -346,6 +356,7 @@ p {
 ::-webkit-scrollbar-thumb:hover {
 	background: -webkit-linear-gradient(#5680e9, #8860d0);
 }
+/*ScrollBar Styles*/
 /*FOOTER STYLES*/
 .foot-container {
 	position: absolute;
@@ -366,50 +377,33 @@ p {
 }
 
 .foot-info sub {
-	margin-top: 10px;
 	font-size: 15pt;
+	padding: 30px 0px;
 }
 
 .socialmedia {
-	margin: 30px auto;
+	margin: 10px 0px 30px 0px;
 	text-align: center;
 }
 
 .fa-twitter,
 .fa-github,
 .fa-paypal,
-.fa-instagram {
+.fa-youtube {
 	padding: 15px;
 	font-size: 30pt;
 	transition: 0.2s;
 	width: 80px;
 	border-radius: 50%;
 	text-align: center;
-	color: rgba(255, 255, 255, 0.4) !important;
+	color: white;
+	opacity: 0.3;
 }
 
-.fa-twitter:hover {
+.fa-twitter:hover, .fa-youtube:hover, .fa-github:hover, .fa-paypal:hover {
 	transition: 0.2s;
 	color: white;
-	text-shadow: 0px 0px 10px white;
-}
-
-.fa-github:hover {
-	transition: 0.2s;
-	color: white;
-	text-shadow: 0px 0px 10px white;
-}
-
-.fa-instagram:hover {
-	transition: 0.2s;
-	color: white;
-	text-shadow: 0px 0px 10px white;
-}
-
-.fa-paypal:hover {
-	transition: 0.2s;
-	color: white;
-	text-shadow: 0px 0px 10px white;
+	opacity: 1;
 }
 
 @media (max-width: 812px) {
