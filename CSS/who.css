@@ -162,7 +162,7 @@ nav {
 	background: -webkit-linear-gradient(#5680e9, #8860d0);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-family: "Bangers", cursive;
+	font-family: "Bangers", monospace;
 	letter-spacing: 4px;
 	font-size: 30pt;
 	margin: 25px 0px;
@@ -186,7 +186,7 @@ nav {
 	-webkit-text-fill-color: transparent;
 	margin: 0px 0px 15px 0px;
 	text-align: center;
-	font-family: "Bangers", cursive;
+	font-family: "Bangers", monospace;
 	letter-spacing: 3px;
 }
 
@@ -298,7 +298,7 @@ nav {
 	.header-text h1 {
 		font-size: 40pt;
 		letter-spacing: 2px;
-		font-family: "Bebas Neue", cursive;
+		font-family: "Bebas Neue", monospace;
 	}
 
 	.header-text sub {

@@ -281,7 +281,7 @@ body {
 h1,
 p {
 	color: white;
-	font-family: "Big Shoulders Stencil Text", cursive;
+	font-family: "Big Shoulders Stencil Text", monospace;
 	margin: 5px 0px;
 	cursor: default;
 }
@@ -414,7 +414,7 @@ p {
 	.header-text h1 {
 		font-size: 40pt;
 		letter-spacing: 2px;
-		font-family: "Bebas Neue", cursive;
+		font-family: "Bebas Neue", monospace;
 	}
 
 	.header-text sub {
