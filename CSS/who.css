@@ -93,28 +93,21 @@ nav {
 		display: none;
 		flex-direction: column;
 		align-items: center;
-		width: 50%;
+		width: 100%;
 		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-		text-decoration: none;
 		letter-spacing: 3px;
-		transition: 0.2s;
 		text-transform: uppercase;
-		padding: 10px 10px;
-		border-radius: 10px;
+		padding: 10px 5px;
+		text-align: center;
 	}
 
 	.nav-active {
-		display: flex;
-	}
-
-	.nav-links a:hover {
-		padding: 10px 10px;
+		display: block;
 	}
 
 	.nav-links li {
-		opacity: 0;
-		margin: 35px 0px;
+		opacity: 1;
+		margin: 30px 0px;
 	}
 
 	.burger {
@@ -125,18 +118,6 @@ nav {
 
 .nav-active {
 	transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-	from {
-		opacity: 0;
-		transform: translateX(100px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-	}
 }
 
 .toggle .line1 {
@@ -279,13 +260,15 @@ nav {
 	width: 80px;
 	border-radius: 50%;
 	text-align: center;
-	color: white;
+	color: grey;
 	opacity: 0.3;
 }
 
 .fa-twitter:hover, .fa-youtube:hover, .fa-github:hover, .fa-paypal:hover {
 	transition: 0.2s;
-	color: white;
+	background: -webkit-linear-gradient(#5680e9, #8860d0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	opacity: 1;
 }
 
