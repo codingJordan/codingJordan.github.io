@@ -27,4 +27,4 @@ const body = document.querySelector("body");
 
 const tl = new TimelineMax();
 
-tl.fromTo(body, 1, { opacity: "0" }, { opacity: "1", ease: Power2.easeInOut })
+tl.fromTo(body, 1, { opacity: "0" }, { opacity: "1", ease: Power2.easeInOut });
