@@ -204,7 +204,7 @@ header {
 
 .project-1 h1 {
 	color: color(accent);
-	font-size: 25pt;
+	font-size: 30pt;
 	font-family: 'Archivo', sans-serif;
 }
 
@@ -245,6 +245,11 @@ header {
 	background-color: color(button-bg);
     border-color: color(button-bg);
 	cursor: pointer;
+}
+
+.project-right h4{
+	font-size: 15pt;
+	font-weight: normal;
 }
 
 
@@ -295,10 +300,11 @@ footer {
 	background-color: color(primary);
 }
 
-footer h1 {
+.title-class {
 	color:	color(accent);
 	font-family: 'Archivo', sans-serif;
-	margin: 50px 0px 25px 0px;
+	margin: 50px;
+	font-size: 30pt;
 }
 
 .social-links {
@@ -308,10 +314,10 @@ footer h1 {
 
 .social-links li {
 	display: inline;
-	margin: 0px 10px;
+	margin: 0px 15px;
 }
 
-.fa-twitter, .fa-github, .fa-youtube {
+.fa-twitter, .fa-github, .fa-youtube, .fa-envelope {
 	color: color(accent);
 	font-size: 30pt;
 	transform: scale(1);
@@ -319,7 +325,7 @@ footer h1 {
 	opacity: 0.4;
 }
 
-.fa-twitter:hover, .fa-github:hover, .fa-youtube:hover {
+.fa-twitter:hover, .fa-github:hover, .fa-youtube:hover, .fa-envelope:hover {
 	color:	color(accent);
 	transform: scale(1.3);
 	opacity: 1;
@@ -333,7 +339,7 @@ footer hr {
 	border: 2px solid color(accent); 
 }
 
-footer p {
+.copyright {
 	margin: 0px 0px 50px 0px;
 	font-family: 'Assistant', sans-serif;
 	font-size: 14pt;
