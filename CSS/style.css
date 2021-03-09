@@ -363,15 +363,21 @@ footer hr {
 }
 
 @media screen and (max-width: 812px) {
-  .header-text h1 {
-    font-size: 20pt;
-    text-align: center;
-    margin: 10rem 40px 0px;
+  header {
+    margin: 0px 0px 0px 5px !important;
   }
+
   .header-text {
-    text-align: center;
-    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .header-text h1 {
+    font-size: 15pt;
+    text-align: center;
+  }
+
   .project-1 project-right {
     float: none;
   }
