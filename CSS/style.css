@@ -220,6 +220,10 @@ header {
   letter-spacing: 2px;
 }
 
+.project-left img:hover {
+  box-shadow: #CD6799 0px 0px 10px 10px;
+}
+
 .lang {
   list-style-type: none;
   margin: 0px 0px 15px 0px;
