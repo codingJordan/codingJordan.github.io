@@ -224,6 +224,14 @@ header {
   box-shadow: #CD6799 0px 0px 10px 10px;
 }
 
+.project-right a {
+  color: #CD6799;
+}
+
+.project-right a:hover {
+  text-decoration: none;
+}
+
 .lang {
   list-style-type: none;
   margin: 0px 0px 15px 0px;
